@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <title>add list</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div id="top">
+
+            <form name="addlist">
+                <label for="subjects">subjects</label>
+                <select name="subjects" id="subject">
+                    <option value="frontend">frontend technology</option>
+                    <option value="backend">backend technology</option>
+                </select>
+
+                <label for="difficultLevel">level</label>
+                <select name="level" id="level">
+                    <option value="basic">basic</option>
+                    <option value="inermediate">intermediate</option>
+                    <option value="high level">high level</option>
+                </select>
+                <label for="Date">due date</label>
+                <input type="date" id="dueDate" name="dueDate">
+                <label for="cost">cost</label>
+                <select name="cost">
+                    <option value="free">free</option>
+                    <option value="premium">premium</option>
+                </select>
+                <label for="moneyType"></label>
+                <select name="moneyType">
+                    <option value="USD">USD</option>
+                    <option value="INR">INR</option>
+                </select>
+        </div>
+
+
+        </form>
+    </header>
+    <form method="post" name="question" action="">
+        <div class="formgroup">
+            <label for="examName"></label>
+            <input type="text" size="70" name="extype" id="extype" class="formgtoup" placeholder="javascript exam">
+        </div>
+
+    </form>
+    <form method="post" action="">
+        <fieldset style="width:477px">
+            <div class="addone">
+                <label></label>
+                <div id="questionAdd">
+                    <select name="question1"></select>
+                    <input type="text" name="onequestion" size="45" id="onequestion" class="questionOne" placeholder="type question here">
+                    <!-- <input type="button" value="delete question" name="button1"> -->
+                    <a href="#" id="deleteQuestion" onclick="document.getElementById('onequestion').value = ''"><i  class="deleteQuestionLink" ></i>Delete question </a>
+
+                    <br><br>
+                </div>
+                <div id="newinput">
+
+                    <label></label>
+                    <input type="checkbox" class="checkTick">
+                    <input type="text" name="firstans" size="45" id="firstans" class="firstAnswer" placeholder="type your answer">
+                    <!-- <input type="button" value="delete answer" name="button2" > -->
+                    <a href="#" id="deleteAnswer" onclick="deleteOutput()"><i  class="deleteLink" ></i>Delete answer </a>
+
+                </div><br>
+                <!-- <label for="secondAnswer">
+                <input type="checkbox" class="secondans">
+                <input type="text" name="secondans[]" id="secondans_0" class="secondans" placeholder="type your answer">
+                <input type="button" value="delete answer" name="button3">
+            </label> -->
+                <div>
+                    <!-- <input onclick="handleClick()" type="button" value=" + add answer" id="addanswerbutton"> -->
+                    <a href="#" id="addanswerbutton" onclick="handleClick()"><i  class="addAnswer" ></i></i>+ Add answer </a>
+                </div>
+
+            </div>
+
+        </fieldset>
+    </form>
+
+    <!-- second field surface -->
+
+
+
+    </form>
+    <form method="post" action="">
+        <fieldset style="width:477px">
+            <div class="addone">
+                <label></label>
+                <div id="questionAddTwo">
+                    <select name="question2"></select>
+                    <input type="text" name="twoquestion" size="45" id="twoquestion" class="questionTwo" placeholder="type question here">
+                    <!-- <input type="button" value="delete question" name="button1"> -->
+                    <a href="#" id="deleteSecondQuestion" onclick="document.getElementById('twoquestion').value = ''"><i  class="deleteSecondQuestionLink" ></i>Delete question </a>
+                    <br><br>
+                </div>
+                <div id="secondInput">
+
+                    <label></label>
+                    <input type="checkbox" class="checkTick">
+                    <input type="text" name="secondans" size="45" id="secondans" class="secondAnswer" placeholder="type your answer">
+                    <!-- <input type="button" value="delete answer" name="button2" > -->
+                    <a href="#" id="deleteAnswerTwo" onclick="deleteSecondOutput()"><i  class="deleteLinkTwo" ></i>Delete answer </a>
+
+                </div><br>
+                <!-- <label for="secondAnswer">
+                <input type="checkbox" class="secondans">
+                <input type="text" name="secondans[]" id="secondans_0" class="secondans" placeholder="type your answer">
+                <input type="button" value="delete answer" name="button3">
+            </label> -->
+                <div>
+                    <!-- <input onclick="handleClick()" type="button" value=" + add answer" id="addanswerbutton"> -->
+                    <a href="#" id="addanswerbuttonTwo" onclick="seconndDelete()"><i  class="addAnswerTwo" ></i></i>+ Add answer </a>
+                </div>
+
+            </div>
+
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+#deleteQuestion,
+#deleteAnswer,
+#addanswerbutton {
+    text-decoration: none;
+    color: rgb(49, 170, 218);
+}
+
+#addanswerbutton,
+#addanswerbuttonTwo {
+    margin-left: 5%;
+}
+
+#deleteSecondQuestion,
+#deleteAnswerTwo,
+#addanswerbuttonTwo {
+    text-decoration: none;
+    color: rgb(49, 170, 218);
+}
